@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habb — Política de Privacidade / Privacy Policy</title>
+<meta name="description" content="Política de Privacidade do Habb, rastreador de hábitos offline. Privacy Policy for Habb, an offline habit tracker.">
+<meta name="robots" content="index, follow">
+<!--
+  ANTES DE PUBLICAR:
+  1. Substitua {{EMAIL_DE_CONTATO}} / {{CONTACT_EMAIL}} por um e-mail real e monitorado.
+  2. Publique esta página em uma URL pública (GitHub Pages, site próprio, etc.).
+     A URL informada no Google Play Console deve abrir sem download e sem login.
+  3. Atualize a data de "Última atualização" sempre que o texto mudar.
+  4. Se o Google Play Billing for ativado, revise a seção "Compras no app".
+-->
+<style>
+  :root {
+    --bg: #f7f7fb;
+    --surface: #ffffff;
+    --text: #1b1d28;
+    --muted: #5a5f74;
+    --border: #e3e5ef;
+    --accent: #4b5bd6;
+    --accent-soft: #eceeff;
+    --note-bg: #eef7f1;
+    --note-border: #cfe8d9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12131a;
+      --surface: #1a1c26;
+      --text: #e8eaf2;
+      --muted: #a2a8bd;
+      --border: #2b2e3d;
+      --accent: #9aa6ff;
+      --accent-soft: #232741;
+      --note-bg: #17251d;
+      --note-border: #2c4636;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  header.page { margin-bottom: 28px; }
+  .brand {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+  .meta { color: var(--muted); font-size: 15px; margin: 0; }
+  .lang { display: flex; gap: 8px; margin: 20px 0 0; }
+  .lang button {
+    font: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    .lang button[aria-pressed="true"] { color: #12131a; }
+  }
+  article {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px 26px;
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 36px 0 10px;
+    padding-top: 6px;
+  }
+  article > h2:first-of-type { margin-top: 8px; }
+  h3 { font-size: 17px; margin: 22px 0 6px; }
+  p { margin: 0 0 14px; }
+  ul, ol { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  a { color: var(--accent); }
+  code {
+    background: var(--accent-soft);
+    border-radius: 6px;
+    padding: 1px 6px;
+    font-size: 14px;
+  }
+  .summary {
+    background: var(--note-bg);
+    border: 1px solid var(--note-border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 0 0 8px;
+  }
+  .summary h2 { margin: 0 0 8px; font-size: 17px; }
+  .summary ul { margin: 0; }
+  .table-scroll { overflow-x: auto; margin: 0 0 18px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; min-width: 520px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 700; background: var(--accent-soft); }
+  tr:last-child td { border-bottom: none; }
+  nav.toc {
+    border-left: 3px solid var(--border);
+    padding: 4px 0 4px 16px;
+    margin: 0 0 8px;
+    font-size: 15px;
+  }
+  nav.toc ol { margin: 0; padding-left: 18px; }
+  nav.toc li { margin-bottom: 4px; }
+  .contact {
+    background: var(--accent-soft);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-top: 8px;
+  }
+  footer.page {
+    margin-top: 26px;
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
+  }
+  @media print {
+    body { background: #fff; color: #000; padding: 0; font-size: 12pt; }
+    article { border: none; padding: 0; }
+    .lang { display: none; }
+    nav.toc { display: none; }
+    a { color: #000; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page">
+    <span class="brand">Habb</span>
+    <h1 id="page-title">Política de Privacidade</h1>
+    <p class="meta" id="page-meta">Última atualização: 18 de novembro de 2026 · Versão do app: 1.0.0</p>
+    <div class="lang">
+      <button type="button" id="btn-pt" aria-pressed="true" aria-controls="doc-pt">Português</button>
+      <button type="button" id="btn-en" aria-pressed="false" aria-controls="doc-en">English</button>
+    </div>
+  </header>
+
+  <!-- ============================== PORTUGUÊS ============================== -->
+  <article id="doc-pt" lang="pt-BR">
+    <div class="summary">
+      <h2>Resumo em uma frase</h2>
+      <ul>
+        <li><strong>O Habb funciona offline.</strong> Seus hábitos, rotinas, compromissos e progresso ficam apenas no seu aparelho.</li>
+        <li><strong>Não existe conta de usuário</strong> e não enviamos seus dados para nenhum servidor nosso.</li>
+        <li><strong>Sem anúncios, sem rastreadores, sem analytics.</strong> O app não usa bibliotecas de publicidade ou de análise de uso.</li>
+        <li><strong>Permissões são opcionais:</strong> notificações, passos e localização só são usados para os recursos que você ativar.</li>
+      </ul>
+    </div>
+
+    <nav class="toc" aria-label="Índice">
+      <ol>
+        <li><a href="#pt-quem">Quem é o responsável</a></li>
+        <li><a href="#pt-dados">Dados guardados no aparelho</a></li>
+        <li><a href="#pt-nao">Dados que não coletamos</a></li>
+        <li><a href="#pt-permissoes">Permissões e para que servem</a></li>
+        <li><a href="#pt-localizacao">Localização e passos</a></li>
+        <li><a href="#pt-compartilhamento">Compartilhamento e terceiros</a></li>
+        <li><a href="#pt-compras">Compras no app</a></li>
+        <li><a href="#pt-backup">Backup do sistema</a></li>
+        <li><a href="#pt-retencao">Retenção e exclusão</a></li>
+        <li><a href="#pt-seguranca">Segurança</a></li>
+        <li><a href="#pt-criancas">Crianças</a></li>
+        <li><a href="#pt-direitos">Seus direitos</a></li>
+        <li><a href="#pt-alteracoes">Alterações desta política</a></li>
+        <li><a href="#pt-contato">Contato</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="pt-quem">1. Quem é o responsável</h2>
+    <p>
+      O <strong>Habb</strong> é um aplicativo Android de acompanhamento de hábitos desenvolvido pela
+      <strong>Vantio</strong> ("nós"). Esta política descreve como o aplicativo trata informações.
+      Como o Habb não possui servidor, banco de dados remoto ou conta de usuário, a maior parte desta
+      política trata de <em>como os dados permanecem no seu aparelho</em>.
+    </p>
+
+    <h2 id="pt-dados">2. Dados guardados no aparelho</h2>
+    <p>
+      O app armazena localmente, na área privada do próprio aplicativo (armazenamento do Android),
+      as informações que você cria:
+    </p>
+    <ul>
+      <li>hábitos e rotinas: nomes, ícones, cores, metas, frequência, dias da semana e histórico de conclusão;</li>
+      <li>agenda: compromissos com data, hora e descrição;</li>
+      <li>anotações e textos livres que você digitar;</li>
+      <li>preferências: tema, idioma, som/vibração, primeiro dia da semana e demais ajustes;</li>
+      <li>progresso diário: contagem de passos ou distância percorrida associada às suas metas;</li>
+      <li>situação do plano (gratuito ou Premium), quando aplicável.</li>
+    </ul>
+    <p>
+      Esses dados são usados exclusivamente para o funcionamento do app no seu aparelho. Eles não são
+      transmitidos para nós nem para terceiros, e não temos como acessá-los.
+    </p>
+
+    <h2 id="pt-nao">3. Dados que não coletamos</h2>
+    <p>O Habb <strong>não</strong> coleta, solicita ou transmite:</p>
+    <ul>
+      <li>nome, e-mail, telefone, endereço ou qualquer dado de identificação pessoal;</li>
+      <li>lista de contatos, mensagens, fotos, arquivos ou microfone;</li>
+      <li>identificadores de publicidade, IMEI ou outros identificadores do aparelho;</li>
+      <li>histórico de navegação, dados de uso, telas visitadas ou eventos de analytics;</li>
+      <li>relatórios de falha (crash logs) enviados automaticamente;</li>
+      <li>sua localização enviada para servidores — veja a seção 5.</li>
+    </ul>
+    <p>
+      O aplicativo não contém SDKs de anúncios, de análise de comportamento ou de rastreamento entre apps.
+    </p>
+
+    <h2 id="pt-permissoes">4. Permissões e para que servem</h2>
+    <p>
+      O Android exibe essas permissões para você aprovar. Todas são opcionais: se você negar, o app
+      continua funcionando, apenas sem o recurso correspondente.
+    </p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Permissão</th><th>Por que o app pede</th><th>O que acontece se você negar</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Notificações</td>
+            <td>Enviar lembretes dos seus hábitos e dos compromissos da agenda.</td>
+            <td>Nenhum lembrete é exibido; o app segue normal.</td>
+          </tr>
+          <tr>
+            <td>Alarmes e lembretes exatos</td>
+            <td>Entregar o lembrete no horário marcado, mesmo com o aparelho em repouso.</td>
+            <td>Os lembretes podem chegar com atraso.</td>
+          </tr>
+          <tr>
+            <td>Reconhecimento de atividade física</td>
+            <td>Ler o contador de passos do aparelho para as metas em passos.</td>
+            <td>Metas em passos não contam; é possível usar distância por GPS.</td>
+          </tr>
+          <tr>
+            <td>Localização (precisa e aproximada)</td>
+            <td>Calcular a distância percorrida para metas em metros, km ou milhas.</td>
+            <td>Metas de distância não são medidas.</td>
+          </tr>
+          <tr>
+            <td>Serviço em primeiro plano (saúde e localização)</td>
+            <td>Continuar contando passos ou distância com o app minimizado, mostrando um aviso na barra de notificações.</td>
+            <td>A contagem para quando o app é fechado.</td>
+          </tr>
+          <tr>
+            <td>Iniciar com o sistema</td>
+            <td>Restaurar seus lembretes depois de reiniciar o aparelho.</td>
+            <td>Você precisa abrir o app para os lembretes voltarem.</td>
+          </tr>
+          <tr>
+            <td>Vibração</td>
+            <td>Alertas com vibração, conforme seus ajustes.</td>
+            <td>Os alertas ficam silenciosos.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="pt-localizacao">5. Localização e passos</h2>
+    <h3>Localização</h3>
+    <p>
+      A localização só é usada quando você tem uma meta em <strong>metros, quilômetros ou milhas</strong> ativa
+      e a medição está ligada. Nesse caso, o app lê a posição do GPS para calcular a distância percorrida.
+    </p>
+    <ul>
+      <li>As coordenadas são usadas <strong>apenas em memória</strong>, para calcular a distância entre duas leituras.</li>
+      <li>O app <strong>não guarda histórico de coordenadas</strong> e não registra onde você esteve.</li>
+      <li>Somente o <strong>total de distância do dia</strong> é salvo, junto ao seu progresso no hábito.</li>
+      <li>Nada é enviado pela internet. O cálculo acontece inteiramente no aparelho.</li>
+      <li>Você pode desligar a medição a qualquer momento no app ou revogar a permissão nos ajustes do Android.</li>
+    </ul>
+    <h3>Passos</h3>
+    <p>
+      Metas em passos usam o sensor de contagem do próprio aparelho, por meio de um serviço em primeiro
+      plano. Apenas a contagem do dia é armazenada junto ao seu progresso; nenhum dado do sensor é
+      compartilhado.
+    </p>
+
+    <h2 id="pt-compartilhamento">6. Compartilhamento e terceiros</h2>
+    <p>
+      <strong>Não vendemos, alugamos nem compartilhamos seus dados.</strong> O Habb não transmite informações
+      para nós ou para terceiros. Não há integração com redes sociais, serviços de publicidade ou
+      plataformas de análise.
+    </p>
+    <p>
+      O Google pode tratar dados relacionados ao download, à instalação, às compras e ao funcionamento do
+      Google Play de acordo com a
+      <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>.
+      Isso é independente do app e controlado pela sua conta Google.
+    </p>
+
+    <h2 id="pt-compras">7. Compras no app</h2>
+    <p>
+      Quando o <strong>Habb Premium</strong> estiver disponível para compra, a transação será processada
+      pelo <strong>Google Play Billing</strong>. Não recebemos, vemos ou armazenamos dados de cartão,
+      endereço de cobrança ou qualquer informação de pagamento — o Google Play cuida disso. O app apenas
+      guarda localmente a confirmação de que o plano Premium está ativo, para liberar os recursos.
+    </p>
+    <p>
+      Observação: em versões de teste distribuídas fora da loja, o desbloqueio do Premium pode ocorrer de
+      forma local, sem qualquer cobrança ou envio de dados.
+    </p>
+
+    <h2 id="pt-backup">8. Backup do sistema</h2>
+    <p>
+      O Android pode incluir os dados do Habb no backup automático do aparelho, conforme as configurações
+      da sua conta Google. Esse backup é feito e controlado pelo sistema operacional e pelo Google, não por
+      nós, e pode ser desativado nos ajustes do Android. Não temos acesso ao conteúdo desse backup.
+    </p>
+
+    <h2 id="pt-retencao">9. Retenção e exclusão</h2>
+    <ul>
+      <li>Os dados permanecem no aparelho enquanto o app estiver instalado.</li>
+      <li>Você pode apagar hábitos, compromissos e anotações dentro do próprio app.</li>
+      <li><strong>Desinstalar o app</strong> ou usar "Limpar dados" nos ajustes do Android remove todas as informações armazenadas.</li>
+      <li>Como não mantemos cópias em servidores, não há dados residuais nossos para excluir.</li>
+    </ul>
+
+    <h2 id="pt-seguranca">10. Segurança</h2>
+    <p>
+      As informações ficam na área privada do aplicativo, protegida pelo sandbox do Android e pelas
+      proteções do seu aparelho (bloqueio de tela, criptografia do sistema). Como os dados não trafegam
+      pela internet, não há risco de interceptação em trânsito. Nenhum método de armazenamento é
+      totalmente imune a falhas, mas recomendamos manter o sistema atualizado e o aparelho protegido por
+      senha ou biometria.
+    </p>
+
+    <h2 id="pt-criancas">11. Crianças</h2>
+    <p>
+      O Habb não é direcionado a crianças e não coleta intencionalmente dados de menores de 13 anos (ou
+      da idade mínima aplicável na sua região). Como o app não coleta dados pessoais nem exige cadastro,
+      não há tratamento de informações de crianças por nossa parte.
+    </p>
+
+    <h2 id="pt-direitos">12. Seus direitos</h2>
+    <p>
+      Leis de proteção de dados, como a LGPD (Lei nº 13.709/2018) no Brasil e o GDPR na União Europeia,
+      garantem direitos de acesso, correção, portabilidade e exclusão de dados pessoais. No Habb, esses
+      direitos são exercidos diretamente por você: os dados estão no seu aparelho e podem ser consultados,
+      alterados ou apagados no app ou removidos ao desinstalá-lo. Se ainda assim tiver dúvidas ou
+      solicitações, fale conosco pelo contato da seção 14.
+    </p>
+
+    <h2 id="pt-alteracoes">13. Alterações desta política</h2>
+    <p>
+      Podemos atualizar esta política se o app passar a oferecer novos recursos (por exemplo, cobrança
+      pelo Google Play) ou se a legislação exigir. A data de "Última atualização" no topo indica a versão
+      vigente. Mudanças relevantes serão comunicadas na ficha do app na Google Play ou dentro do
+      aplicativo.
+    </p>
+
+    <h2 id="pt-contato">14. Contato</h2>
+    <div class="contact">
+      <p style="margin:0">
+        Dúvidas sobre esta política ou sobre privacidade no Habb:<br>
+        <strong><a href="mailto:{{vagnerdss2@gmail.com}}">Contato</a></strong><br>
+        Desenvolvido por Vantio.
+      </p>
+    </div>
+  </article>
+
+  <!-- ============================== ENGLISH ============================== -->
+  <article id="doc-en" lang="en" hidden>
+    <div class="summary">
+      <h2>The short version</h2>
+      <ul>
+        <li><strong>Habb works offline.</strong> Your habits, routines, appointments and progress stay on your device.</li>
+        <li><strong>There is no user account</strong> and we do not send your data to any server of ours.</li>
+        <li><strong>No ads, no trackers, no analytics.</strong> The app bundles no advertising or usage-analytics SDKs.</li>
+        <li><strong>Permissions are optional:</strong> notifications, steps and location are used only for the features you enable.</li>
+      </ul>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <ol>
+        <li><a href="#en-who">Who is responsible</a></li>
+        <li><a href="#en-data">Data stored on your device</a></li>
+        <li><a href="#en-not">Data we do not collect</a></li>
+        <li><a href="#en-permissions">Permissions and their purpose</a></li>
+        <li><a href="#en-location">Location and steps</a></li>
+        <li><a href="#en-sharing">Sharing and third parties</a></li>
+        <li><a href="#en-purchases">In-app purchases</a></li>
+        <li><a href="#en-backup">System backup</a></li>
+        <li><a href="#en-retention">Retention and deletion</a></li>
+        <li><a href="#en-security">Security</a></li>
+        <li><a href="#en-children">Children</a></li>
+        <li><a href="#en-rights">Your rights</a></li>
+        <li><a href="#en-changes">Changes to this policy</a></li>
+        <li><a href="#en-contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="en-who">1. Who is responsible</h2>
+    <p>
+      <strong>Habb</strong> is an Android habit tracker developed by <strong>Vantio</strong> ("we").
+      This policy explains how the app handles information. Because Habb has no server, no remote
+      database and no user account, most of this policy is about <em>how data stays on your device</em>.
+    </p>
+
+    <h2 id="en-data">2. Data stored on your device</h2>
+    <p>
+      The app stores locally, in its own private Android storage, the information you create:
+    </p>
+    <ul>
+      <li>habits and routines: names, icons, colors, goals, frequency, weekdays and completion history;</li>
+      <li>agenda: appointments with date, time and description;</li>
+      <li>notes and any free text you type;</li>
+      <li>preferences: theme, language, sound/vibration, first day of the week and other settings;</li>
+      <li>daily progress: step counts or distance tied to your goals;</li>
+      <li>plan status (free or Premium), when applicable.</li>
+    </ul>
+    <p>
+      This data is used solely to run the app on your device. It is not transmitted to us or to third
+      parties, and we have no way to access it.
+    </p>
+
+    <h2 id="en-not">3. Data we do not collect</h2>
+    <p>Habb does <strong>not</strong> collect, request or transmit:</p>
+    <ul>
+      <li>name, email, phone number, address or any personally identifying information;</li>
+      <li>contacts, messages, photos, files or microphone input;</li>
+      <li>advertising IDs, IMEI or other device identifiers;</li>
+      <li>browsing history, usage data, screen views or analytics events;</li>
+      <li>automatically uploaded crash reports;</li>
+      <li>your location sent to servers — see section 5.</li>
+    </ul>
+    <p>
+      The app contains no advertising, behavior-analytics or cross-app tracking SDKs.
+    </p>
+
+    <h2 id="en-permissions">4. Permissions and their purpose</h2>
+    <p>
+      Android asks you to approve these permissions. All are optional: if you decline, the app keeps
+      working, just without the matching feature.
+    </p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Why the app asks</th><th>If you decline</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Notifications</td>
+            <td>Send reminders for your habits and agenda appointments.</td>
+            <td>No reminders appear; everything else works.</td>
+          </tr>
+          <tr>
+            <td>Exact alarms</td>
+            <td>Deliver reminders at the exact scheduled time, even when the device is idle.</td>
+            <td>Reminders may arrive late.</td>
+          </tr>
+          <tr>
+            <td>Physical activity recognition</td>
+            <td>Read the device step counter for step goals.</td>
+            <td>Step goals do not count; GPS distance can be used instead.</td>
+          </tr>
+          <tr>
+            <td>Location (precise and approximate)</td>
+            <td>Compute distance traveled for goals in meters, kilometers or miles.</td>
+            <td>Distance goals are not measured.</td>
+          </tr>
+          <tr>
+            <td>Foreground service (health and location)</td>
+            <td>Keep counting steps or distance while the app is minimized, showing a notification.</td>
+            <td>Counting stops when the app is closed.</td>
+          </tr>
+          <tr>
+            <td>Run at startup</td>
+            <td>Restore your reminders after the device restarts.</td>
+            <td>You must open the app for reminders to return.</td>
+          </tr>
+          <tr>
+            <td>Vibration</td>
+            <td>Vibrating alerts, according to your settings.</td>
+            <td>Alerts stay silent.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="en-location">5. Location and steps</h2>
+    <h3>Location</h3>
+    <p>
+      Location is used only when you have an active goal in <strong>meters, kilometers or miles</strong>
+      and tracking is on. In that case the app reads the GPS position to compute distance traveled.
+    </p>
+    <ul>
+      <li>Coordinates are used <strong>in memory only</strong>, to compute the distance between two readings.</li>
+      <li>The app <strong>keeps no coordinate history</strong> and does not record where you have been.</li>
+      <li>Only the <strong>daily distance total</strong> is saved, alongside your habit progress.</li>
+      <li>Nothing is sent over the internet. All computation happens on the device.</li>
+      <li>You can turn tracking off at any time in the app or revoke the permission in Android settings.</li>
+    </ul>
+    <h3>Steps</h3>
+    <p>
+      Step goals use the device's own step sensor through a foreground service. Only the daily count is
+      stored with your progress; no sensor data is shared.
+    </p>
+
+    <h2 id="en-sharing">6. Sharing and third parties</h2>
+    <p>
+      <strong>We do not sell, rent or share your data.</strong> Habb transmits no information to us or to
+      third parties. There is no integration with social networks, advertising services or analytics
+      platforms.
+    </p>
+    <p>
+      Google may process data related to downloading, installing, purchasing and operating Google Play
+      under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.
+      That is independent of the app and controlled by your Google account.
+    </p>
+
+    <h2 id="en-purchases">7. In-app purchases</h2>
+    <p>
+      When <strong>Habb Premium</strong> becomes available for purchase, the transaction will be handled by
+      <strong>Google Play Billing</strong>. We do not receive, see or store card data, billing addresses or
+      any payment information — Google Play does. The app only stores locally the fact that Premium is
+      active, so it can unlock the features.
+    </p>
+    <p>
+      Note: in test builds distributed outside the store, Premium may be unlocked locally, with no charge
+      and no data sent anywhere.
+    </p>
+
+    <h2 id="en-backup">8. System backup</h2>
+    <p>
+      Android may include Habb's data in your device's automatic backup, depending on your Google account
+      settings. That backup is performed and controlled by the operating system and Google, not by us, and
+      can be disabled in Android settings. We have no access to its contents.
+    </p>
+
+    <h2 id="en-retention">9. Retention and deletion</h2>
+    <ul>
+      <li>Data remains on the device for as long as the app is installed.</li>
+      <li>You can delete habits, appointments and notes inside the app.</li>
+      <li><strong>Uninstalling the app</strong> or using "Clear data" in Android settings removes everything stored.</li>
+      <li>Since we keep no server copies, there is no residual data of ours to delete.</li>
+    </ul>
+
+    <h2 id="en-security">10. Security</h2>
+    <p>
+      Information lives in the app's private storage, protected by the Android sandbox and by your device
+      (screen lock, system encryption). Because data is not transmitted over the internet, there is no
+      interception in transit. No storage method is completely immune to failure, but we recommend keeping
+      your system updated and protecting the device with a password or biometrics.
+    </p>
+
+    <h2 id="en-children">11. Children</h2>
+    <p>
+      Habb is not directed to children and does not intentionally collect data from anyone under 13 (or
+      the minimum age in your region). Since the app collects no personal data and requires no sign-up,
+      we do not process children's information at all.
+    </p>
+
+    <h2 id="en-rights">12. Your rights</h2>
+    <p>
+      Data protection laws such as the LGPD (Brazil) and the GDPR (European Union) grant rights of access,
+      correction, portability and deletion of personal data. In Habb you exercise these rights directly:
+      the data is on your device and can be viewed, changed or erased in the app, or removed by
+      uninstalling it. If you still have questions or requests, contact us using section 14.
+    </p>
+
+    <h2 id="en-changes">13. Changes to this policy</h2>
+    <p>
+      We may update this policy if the app gains new features (for example, Google Play billing) or if the
+      law requires it. The "Last updated" date at the top shows the current version. Material changes will
+      be announced on the app's Google Play listing or inside the app.
+    </p>
+
+    <h2 id="en-contact">14. Contact</h2>
+    <div class="contact">
+      <p style="margin:0">
+        Questions about this policy or privacy in Habb:<br>
+        <strong><a href="mailto:{{vagnerdss2@gmail.com}}">{{CONTATO}}</a></strong><br>
+        Developed by Vantio.
+      </p>
+    </div>
+  </article>
+
+  <footer class="page">
+    © 2026 Vantio · Habb
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var pt = document.getElementById('doc-pt');
+    var en = document.getElementById('doc-en');
+    var btnPt = document.getElementById('btn-pt');
+    var btnEn = document.getElementById('btn-en');
+    var title = document.getElementById('page-title');
+    var meta = document.getElementById('page-meta');
+    if (!pt || !en || !btnPt || !btnEn) return;
+
+    function show(lang) {
+      var isPt = lang === 'pt';
+      pt.hidden = !isPt;
+      en.hidden = isPt;
+      btnPt.setAttribute('aria-pressed', String(isPt));
+      btnEn.setAttribute('aria-pressed', String(!isPt));
+      document.documentElement.lang = isPt ? 'pt-BR' : 'en';
+      document.title = isPt
+        ? 'Habb — Política de Privacidade'
+        : 'Habb — Privacy Policy';
+      if (title) {
+        title.textContent = isPt ? 'Política de Privacidade' : 'Privacy Policy';
+      }
+      if (meta) {
+        meta.textContent = isPt
+          ? 'Última atualização: 18 de novembro de 2026 · Versão do app: 1.0.0'
+          : 'Last updated: November 18, 2026 · App version: 1.0.0';
+      }
+      try { history.replaceState(null, '', isPt ? '#pt' : '#en'); } catch (e) {}
+    }
+
+    btnPt.addEventListener('click', function () { show('pt'); });
+    btnEn.addEventListener('click', function () { show('en'); });
+
+    // Deep link: privacy-policy.html#en opens the English version.
+    if (location.hash === '#en') show('en');
+  })();
+</script>
+</body>
+</html>
